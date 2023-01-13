@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""
-    Script that starts a Flask web app on 0.0.0.0:5000
-"""
+
+""" Script that starts a Flask web app on 0.0.0.0:5000 """
+
 from flask import Flask
 
 app = Flask(__name__)
