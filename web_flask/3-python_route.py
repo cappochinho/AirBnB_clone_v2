@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 
-""" Script that starts a Flask web app on 0.0.0.0:5000 """
+"""
+    Script that starts a Flask web app on 0.0.0.0:5000
+    This script can access:
+    1. the default url("/")
+    2. the hbnb welcome page("/")
+    3. the c page with custom text("/c/<text>")
+    4. the python page with custom text("/python/(<text>))
+"""
 
 from flask import Flask
 
