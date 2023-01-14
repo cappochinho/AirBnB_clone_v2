@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 
 @app.teardown_appcontext
-def close_db():
+def close_db(exception):
     """Close connection to the storage"""
 
     storage.close()
