@@ -18,30 +18,38 @@ app.url_map.strict_slashes = False
 @app.route("/")
 def hello():
     """ Returns a welcome message to 0.0.0.0:5000"""
+
     return "Hello HBNB!"
 
 
 @app.route("/hbnb")
 def hello_hbnb():
     ''' Returns HBNB'''
+
     return "HBNB"
+
 
 @app.route("/c/<text>")
 def c_text(text):
     """ Displays C followed by value in 'text' variable"""
+
     text = text.replace("_", " ")
     return "C {}".format(text)
+
 
 @app.route('/python/')
 @app.route("/python/<text>")
 def py_text(text="is cool"):
     """ Displays  followed by value in 'text' variable"""
+
     text = text.replace("_", " ")
     return "Python {}".format(text)
+
 
 @app.route("/number/<int:n>")
 def number(n):
     """ Returns a number if it is an integer """
+
     return "{} is a number".format(n)
 
 
